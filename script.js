@@ -1,11 +1,19 @@
-function showSection(sectionId) {
-    const sections = document.getElementsByClassName('section');
+const tabs = document.querySelectorAll('[data-tab-target]')
+const tabContents = document.querySelectorAll('[data-tab-content]')
 
-    for (let i = 0; i < sections.length; i++) {
-      sections[i].style.display = 'none';
-    }
 
-    document.getElementById(sectionId).style.display = 'block';
-  }
+tabs.forEach(tab => { 
+    tab.addEventListener('click', () => {
+        const target = document.querySelector(tab.dataset.tabTarget)
+        tabContents.forEach(tabContent => {
+            tabContent.classList.remove('active')
+        })
+        tabs.forEach(tab => {
+        tab.classList.remove('active')
+        })
+        tab.classList.toggle('active')
+        target.classList.toggle('active')
+    })
+})
 
-  
+ 
