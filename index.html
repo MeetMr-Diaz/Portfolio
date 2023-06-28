@@ -1,153 +1,158 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width, initial-scale=1.0">
-  <title>Portfolio</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="script.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src ="script.js" defer></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio 1.2</title>
+
 </head>
 <body>
-  <nav class="navbar">
-    <ul>
-      <li><a href="#" onclick="showSection('about')">Home</a></li>
-      <li><a href="#" onclick="showSection('resume')">CV</a></li>
-      <li><a href="#" onclick="showSection('education')">Education</a></li>
-      <li><a href="#" onclick="showSection('projects')">Projects</a></li>
-      <li><a href="#" onclick="showSection('contact')">Contact Info</a></li>
+    <ul class="tabs">
+        <li data-tab-target="#Home" class="active tab">Home</li>
+        <li data-tab-target="#CV" class="tab">CV</li>
+        <li data-tab-target="#Education" class="tab">Education</li>
+        <li data-tab-target="#Projects" class="tab">Projects</li>
+        <li data-tab-target="#Contact"class="tab">Contact</li>
     </ul>
-  </nav>
+    <div class="tab-content">
+        <div id="Home" data-tab-content class="active">
+            
+            <h1>About Me</h1>
+            <img src="images/Max.JPG" >
+            
+            <p> Hi. My name is Max Diaz. I am returning to school to obtain my B.S in computer science. I have an interest in both frontend and backend development. While initially began school pursuing a Civil/Mechanical Engineering, I discovered my deep fascination for computer science. Years of experience as a lead technician in production engineering have equipped me with invaluable skills, such as problem-solving, attention to detail, and effective teamwork. I am excited to leverage this experience as I dig further into the field of computer science. <br><br>      
+                Currently, I am working on projects that allow me to apply my skills in both frontend and backend development. This hands-on experience has been instrumental in expanding my knowledge of programming languages and cutting-edge technologies. I relish the opportunity to tackle challenges and explore innovative solutions within this dynamic field. <br><br>
+                The future in the computer science field shows tremendous opportunities, and I eagerly anticipate the endless possibilities it offers. I am excited to embark on this journey and contribute my skills and enthusiasm to making a meaningful impact in the field.
+            </p>
+        </div>
 
-  <div class="section about" id="about" style="display: block;">
-    <div class="about-content">
-      <img src="images/IMG_1615.JPG" alt="pic">
-    <p> 
-      Hi. My name is Max Diaz. I am returning to school to obtain my B.S in computer science. I have an interest in both frontend and backend development. While initially began school pursuing a Civil/Mechanical Engineering, I discovered my deep fascination for computer science. Years of experience as a lead technician in production engineering have equipped me with invaluable skills, such as problem-solving, attention to detail, and effective teamwork. I am excited to leverage this experience as I dig further into the field of computer science. <br><br>      
-      Currently, I am working on projects that allow me to apply my skills in both frontend and backend development. This hands-on experience has been instrumental in expanding my knowledge of programming languages and cutting-edge technologies. I relish the opportunity to tackle challenges and explore innovative solutions within this dynamic field. <br><br>
-      The future in the computer science field shows tremendous opportunities, and I eagerly anticipate the endless possibilities it offers. I am excited to embark on this journey and contribute my skills and enthusiasm to making a meaningful impact in the field.
-    </p>
-    </div>
-  </div>
-  
+        <div id="CV" data-tab-content>
+            <h1>CV</h1>
+            <div>
+                <button id="Download">
+                  pdf <a href="CS_resume.pdf" target="_blank">Resume</a>
+                </button>
+              </div>
+            <p>
+                Max Diaz<br>
+                Kansas City, Missouri 64126<br>
+                Email: <a href="mailto:mfdc37@umkc.edu">mfdc37@umkc.edu</a><br><br>
+        
+                <strong>SUMMARY</strong><br>
+                Computer Science student with knowledge in C++ and Java, as well as basic SQL. Experienced lead Technician with a demonstrated history of working in the paper products industry. Skill in operation management, Process engineering, Engineering maintenance management. Strong engineering professional in manufacturing engineering process.<br><br>
+        
+                <strong>EXPERIENCE</strong><br>
+                Georgia-Pacific Corporation, Kansas City, MO<br>
+                Lead Technician, 09/2010-01/2022<br>
+                - Maintain quality control over corrugated packaging<br>
+                - Create and improve value to processes<br>
+                - Perform quality check; ink viscosity, ink Ph., color swatch and board caliper<br>
+                - Report deviation or incorrect process to quality management<br><br>
+        
+                Wel-Cote Manufacturing, Kansas City, MO<br>
+                Operator, 09/2004-06/2010<br>
+                - Operator: ready mix, liquid or dry<br>
+                - Cross trained with all the other equipment<br>
+                - Follow formula card to achieve proper viscosity<br><br>
+        
+                Volunteering/Part-time staff at Grace United Community Church, Kansas City, MO<br>
+                Part-time staff, 2000–2004<br>
+                - After school tutor<br><br>
+        
+                <strong>SKILLS</strong><br>
+                - Proficient on Microsoft Office<br>
+                - KIWI automation floor plan<br>
+                - Fluent in English and Spanish<br>
+                - C++, Java, SQL<br><br>
+        
+                <strong>EDUCATION</strong><br>
+                Metropolitan Community College, Kansas City, MO<br>
+                - AAS in Engineering. Emphasis Civil/Mechanical Engineering<br>
+                - AAS in Engineering. Emphasis Computer Science<br><br>
+        
+                University of Missouri-Kansas City, Kansas City, MO<br>
+                - B.S. Computer Science Student. Spring 2022 – Fall 2023 Pending<br>
+                
+                
+              </p>
+        </div>
 
-  <div class="section resume" id="resume" style="display: none;">
-    <div class="container">
-      <h2>Download <a href="Porfolio -CV.pdf" download>Resume</a></h2>
-      <div class="cv">
-        <p>
-          Max Diaz<br>
-          Kansas City, Missouri 64126<br>
-          Phone 816-769-9762<br>
-          Email: mfdc37@umkc.edu<br><br>
-  
-          <strong>SUMMARY</strong><br>
-          Computer Science student with knowledge in C++ and Java, as well as basic SQL. Experienced lead Technician with a demonstrated history of working in the paper products industry. Skill in operation management, Process engineering, Engineering maintenance management. Strong engineering professional in manufacturing engineering process.<br><br>
-  
-          <strong>EXPERIENCE</strong><br>
-          Georgia-Pacific Corporation, Kansas City, MO<br>
-          Lead Technician, 09/2010-01/2022<br>
-          - Maintain quality control over corrugated packaging<br>
-          - Create and improve value to processes<br>
-          - Perform quality check; ink viscosity, ink Ph., color swatch and board caliper<br>
-          - Report deviation or incorrect process to quality management<br><br>
-  
-          Wel-Cote Manufacturing, Kansas City, MO<br>
-          Operator, 09/2004-06/2010<br>
-          - Operator: ready mix, liquid or dry<br>
-          - Cross trained with all the other equipment<br>
-          - Follow formula card to achieve proper viscosity<br><br>
-  
-          Volunteering/Part-time staff at Grace United Community Church, Kansas City, MO<br>
-          Part-time staff, 2000–2004<br>
-          - After school tutor<br><br>
-  
-          <strong>SKILLS</strong><br>
-          - Proficient on Microsoft Office<br>
-          - KIWI automation floor plan<br>
-          - Fluent in English and Spanish<br>
-          - C++, Java, SQL<br><br>
-  
-          <strong>EDUCATION</strong><br>
-          Metropolitan Community College, Kansas City, MO<br>
-          - AAS in Engineering. Emphasis Civil/Mechanical Engineering<br>
-          - AAS in Engineering. Emphasis Computer Science<br><br>
-  
-          University of Missouri-Kansas City, Kansas City, MO<br>
-          - B.S. Computer Science Student. Spring 2022 – Fall 2023 Pending<br>
+        <div id="Education" data-tab-content>
+            <h1>Education Background</h1>
+            <div id="educationHistory">
+              <p>I started my College journey pursuing civil and Mechanical engineering back in Community College at Penn Valley and Maples Woods. I have always been interested in how things work and how they are built. I have always been a hands-on person and enjoy building things. During my time at Penn Valley, I was able to obtain my Associates in Engineering. I had the opportunity to work as a lead technician for years. I enjoyed the work, but I felt like I was missing something. I decided to go back to school and obtain my B.S in Computer Science. I am currently a student at UMKC and will be graduating in fall 2023. Since then, I have enjoyed this field better than my previous one.</p>
+            </div>
+            <div id="educationDetails">
+              <h4>Student: University of Missouri-Kansas City (2021-2023)</h4>
+              Degree: Bachelor of Science in Computer Science <br><br>
+                <li>Discreet Math II</li>
+                <li>Data Structure</li>
+                <li>Ethics & Profession</li>
+                <li>Statistics</li>
+                <li>Applied Probability</li>
+                <li>Programming language</li>
+                <li>Data Communication and Network</li>
+                <li>Operating Systems</li>
+                <li>Algorithms</li>
+                <li>Java Programming Application</li>
+                <li>Database Management</li>
+                <li>Foundation of Software Engineering</li>
+                <li>Linear Algebra</li>
+                <li>VR App Dev with Unity</li>
+                <li>Web Development</li>
+    
+              <h4>Metropolitan Community College Penn Valley and Mapplewoods</h4>
+              Associates Science in Civil Engineering <br>
+              Associates Science in Computer Science
+              
+                  <li>Object Oriented Programming C++</li>
+                  <li>History</li>
+                  <li>Computer Architecture</li>
+                  <li>Discrete Structures</li>
+                  <li>Calculus I</li>
+                  <li>Calculus II</li>
+                  <li>Calculus III</li>
+                  <li>Defferential Equations</li>
+                  <li>Discreet Math I</li>
+                  <li>Programming Fundamentals</li>
+                  <li>Philosophy</li>
+                  <li>Engineering Physics I</li>
+                  <li>Engineering Physics II</li>
+                  <li>Engineering statics and Computation</li>
+                  <li>Psycology</li>
+                  <li>Engineering Statics</li>
+                  <li>Engineering Dynamics</li>
+                  <li>General Chemistry</li>
+              
+            </div>
+          </div>
           
-          
-        </p>
-      </div>
+        <div id="Projects" data-tab-content>
+            <h1>Projects</h1>
+            <p>Projects go here <br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo libero esse sunt nam doloribus distinctio eum suscipit, pariatur et minus laboriosam temporibus? Omnis quas modi sit neque harum at ipsa. </p>
+        </div>
+        <div id="Contact" data-tab-content>
+            <h1>Contact</h1>
+            <p>Contact info goes here <br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore dolore vel incidunt? Explicabo, optio libero, aspernatur aperiam eum animi tenetur sequi, unde quibusdam pariatur perferendis nostrum voluptates accusamus a! Necessitatibus. </p>
+        </div>
     </div>
-  </div>
-  
-  <div class="section education" id="education" style="display: none">
-    <div class="container">
-      <h3>Education</h3><br>
-      <ul>
-        <li>
-          <h4>Student: University of Missouri-Kansas City (2021-2023)</h4>
-        </li>
-        <li>
-          Degree: Bachelor of Science in Computer Science
-        </li>
-      </ul>
-    </div>
-  
-    <br>
-    <div class="container"> 
-      <h3>Relevant Courses</h3>
-      <ul>
-        <li>Object Oriented Programming</li>
-        <li>Web Development</li>
-        <li>Database Management</li>
-        <li>Software Engineering</li>
-        <li>Computer Architecture</li>
-        <li>Operating Systems</li>
-        <li>Computer Networks</li>
-        <li>Algorithms</li>
-        <li>Discrete Structures</li>
-        <li>Calculus</li>
-        <li>Statistics</li>
-      </ul>
-     <br>
-      <div class="container">
-        <ul>
-          <li>
-             <h4>Metropolitan Community College Penn Valley </h4>
-          </li>
-          <li>
-            Associates Science in Civil Engineering
-         </li>
-          <li>
-             Associates Science in Computer Science
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  
-  
-  <div class="section projects" id="projects" style="display: none;">
-    <div class="container">
-      <h2>Projects</h2>
-      <div class="project">
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus voluptatem minus at, aperiam corporis repudiandae tempora laudantium eligendi ea praesentium ullam omnis tenetur cupiditate delectus magnam reiciendis sint. Aliquam, ipsam!
-        </p>
-      </div>
-    </div>
-  </div>
 
-  <div class="section contact" id="contact" style="display: none;">
-    <div class="container">
-      <h2>Contact</h2>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, natus molestiae! Sequi eius reiciendis porro amet, quisquam soluta corporis perferendis a, aliquam voluptatibus atque accusamus reprehenderit saepe obcaecati laboriosam non.
-      </p>
-    </div>
-  </div>  
+    <footer>
+        <p> Author: Max Diaz <br>
+            <a href="mailto:mfdc37@umkc.edu">mfdc37@umkc.edu</a><br>
+            <a href="https://github.com/MeetMr-Diaz" target="_blank"><ion-icon name="logo-github"></ion-icon>
+            </a><br>
+
+            <a href="https://www.youtube.com/watch?v=5L6h_MrNvsk" target="_blank">CSS partially based on tutorail by Web Dev Simplified</a><br>
+
+            <a href="https://ionic.io/ionicons" target="_blank">github icon by ionicons</a>
+        </p>
+    </footer>
 </body>
 </html>
-
-

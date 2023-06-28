@@ -1,176 +1,165 @@
-/* Reset default browser styles */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* Styles for the navigation bar */
-.navbar {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: rgba(0, 0, 0, 0.9);
-  position: sticky;
-}
-
-nav ul {
-  display: flex;
-  list-style: none;
-  margin: 25px 0px;
-}
-
-nav ul li {
-  font-family: century;
-  font-size: 25px;
-  font-weight: bold;
-}
-
-nav ul li a {
-  text-decoration: none;
+/* CSS Code partially based on tutorail by [Web Dev Simplified] */
+[data-tab-content] {
+    display: none;
+  }
+  
+  .active[data-tab-content] {
+    display: block;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5; 
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .tabs {
+    display: flex;
+    
+    justify-content: space-around;
+    list-style: none;
+    margin: 0;
+    padding: 20px;;
+    background-color: rgb(11, 15, 3);
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+    
+  }
+  
+  .tab {
+    cursor: pointer;
+    padding: 10px;
+    
+  }
+  
+  .tab:hover {
+    background-color: #f5efef;
+    color: #333333;
+    box-shadow: 0 0 10px white;
+  }
+  
+  .tab-content {
+    margin: 20px;
+    background-color: antiquewhite;
+    border: solid 1px #333333;
+    box-sizing: border-box; 
+    padding-top: 30px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 60px;
+    flex:1;
+    
+  }
+  
+  .Home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    height: auto;
+    padding: auto;
+    
+  }
+  #Home p {
+    font-size: 25px;
+    text-align: justify;
+    margin-right: 20px;
+    margin-left: 20px;
+  } 
+  
+  #Home img {
+    width: 200px;
+    height: 250px;
+    border-radius: 100%;
+    float: left;
+    margin-right: 55px;
+    margin-left: 22px;
+  }
+  
+.social-icon {
   color: white;
-  padding: 8px 25px;
-  transition: all .5s ease;
+   font-size: 30px;
+   transition: color 0.2s;
 }
-
-nav ul li a:hover {
-  background-color: white;
-  color: black;
+  
+.social-icon:hover {
+  background-color: #f5efef;
+  color: #333333;
   box-shadow: 0 0 10px white;
 }
-
-.about {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  border: 2px solid #130f0f;
-  padding: 6rem;
-  font-size: 1.5rem;
-  background-color: antiquewhite;
-  margin: 1rem;
-  width: 97vw;
-  height: auto;
-}
-
-.about-content {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-end;
-  justify-content: center;
-  width:100%;
-}
-
-.about img {
-  border-radius: 100%;
-  width: 250px;
-  height: 250px;
-  margin-bottom: 270px;
-  margin-right: 10px;
-}
-
-
-/* Styles for the resume section */
-.resume {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  border: 2px solid #130f0f;
-  padding: 1%;
-  font-size: 1.5rem;
-  background-color: antiquewhite;
-  margin: 1rem;
-}
-
-.resume p {
-  margin: 0;
-  padding: 0;
-}
-
-.resume h2 {
-  margin-bottom: 2rem;
-}
-
-
-
-
-/* Styles for the education section */
-.education {
-  /* display: flex; */
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  border: 2px solid #130f0f;
-  padding: 1%;
-  font-size: 1.5rem;
-  background-color: antiquewhite;
-  margin: 1rem;
-}
-
-.education ul {
-  list-style: none;
-  margin-bottom: 0rem;
-}
-
-.education ul li {
-  margin-bottom: 0.1rem;
-}
-
-
-/* Responsive styles using media queries */
-@media (max-width: 768px) {
-  /* Adjust styles for smaller screens */
-  .education {
-    padding: 0%;
-  }
   
-  .education h3 {
-    font-size: 1.8rem;
-  }
+#CV p {
+  font-size: 25px;
+  text-align:center;
 
-  .resume {
-    padding: 0%;
-  }
-  
-  .resume h2 {
-    font-size: 1.8rem;
-  }
 }
 
-@media (max-width: 480px) {
-  /* Adjust styles for even smaller screens */
-  .education {
-    padding: 100%;
-  }
-  
-  .education h3 {
-    font-size: 1.6rem;
-  }
-
-  .resume {
-    padding: 100%;
-  }
-  
-  .resume h2 {
-    font-size: 1.6rem;
-  }
-}
-.download-btn {
-  padding: 12px 24px;
-  font-size: 16px;
-  text-transform: uppercase;
-  font-weight: bold;
-  color: #fff;
-  background: linear-gradient(to right,#40a7fc,#056cc0);
-  border-radius: 8px;
-  margin: 8px 24px;
-  box-shadow:0 6px 20px -8px rgba(0, 0, 0, 0.5);
+#CV button {
+  font-size: 15px;
+  text-align:center;
+  background-color:antiquewhite;
+  color:blue;
+  border: solid 1px #333333;
+  padding: 5px;
+  border-radius: 10px;
+  box-sizing: border-box;
   cursor: pointer;
-  transition: all 500ms ease;
+  transition: background-color 0.2s;
+}
+#CV button:hover {
+  background-color: #f5efef;
+  color: #f30606;
+  box-shadow: 0 0 10px blue;
 }
 
-.download-btn:hover {
-  transform: translateY(-4px);
-  
+
+#Education {
+  text-align: centers;
 }
+
+#Education #educationHistory{
+  font-size: 25px;
+  text-align: center;
+  margin: 5px;
+  padding: 0px;
+}
+
+#Education #educationDetails {
+  text-align: center;
+  font-size: 25px;
+  list-style: none;
+}
+
+footer {
+    text-align: center;
+    padding: 7px;
+    background-color: rgb(7, 10, 6);
+    color: white;
+    margin-top: auto;
+    height: 135px;
+  }
+
+  footer p {
+    margin: 1px 0;
+    font-size: 14px;
+  }
+
+  footer a {
+    color: white;
+  }
+
+  footer a:hover {
+    background-color: #f5efef;
+    color: #333333;
+    box-shadow: 0 0 10px white;
+  }
+
+  footer ion-icon[name="logo-github"] {
+    font-size: 25px;
+    margin-top: 10px;
+  }
