@@ -22,7 +22,7 @@
         <div id="Home" data-tab-content class="active">
             
             <h1>About Me</h1>
-            <img src="Max.JPG" >
+            <img src="pics/Max.JPG" >
             
             <p> Hi. My name is Max Diaz. I am returning to school to obtain my B.S in computer science. I have an interest in both frontend and backend development. While initially began school pursuing a Civil/Mechanical Engineering, I discovered my deep fascination for computer science. Years of experience as a lead technician in production engineering have equipped me with invaluable skills, such as problem-solving, attention to detail, and effective teamwork. I am excited to leverage this experience as I dig further into the field of computer science. <br><br>      
                 Currently, I am working on projects that allow me to apply my skills in both frontend and backend development. This hands-on experience has been instrumental in expanding my knowledge of programming languages and cutting-edge technologies. I relish the opportunity to tackle challenges and explore innovative solutions within this dynamic field. <br><br>
@@ -142,7 +142,7 @@
                     </div>
                     <div class="image-wrapper">
                         <a href="https://github.com/MeetMr-Diaz/SOS_Game_Sprint_5.git" target="_blank">
-                          <img src="SOS.png" alt="">
+                          <img src="pics/SOS.png" alt="">
                         </a>
                       </div>
                 </div>
@@ -153,19 +153,19 @@
                     </div>
                     <div class="image-wrapper">
                         <a href="https://github.com/MeetMr-Diaz/VR-Dart-Shooting.git" target="_blank">
-                          <img src="VR.png" alt="">
+                          <img src="pics/VR.png" alt="">
                         </a>
                       </div>
                 </div>
 
                 <div id="box">
                     <div class="content">
-                        <h1 class="heading">Energy Company</h1>
+                        <h1 class="heading">Database App </h1>
                     <p>The Energy application is a comprehensive utility company app that efficiently manages customer information and billing using a connected database server. With its user-friendly interface, the app empowers the company to perform essential tasks such as adding or removing customers and updating their personal details and billing status. Moreover, it provides the flexibility to adjust energy tariffs between daily and flat rates, facilitating accurate monthly bill calculations for each customer. To ensure security and accessibility, the app includes a login system that allows authorized users to access and interact with the connected database server. This robust and versatile app streamlines the utility company's operations and enhances customer service. </p>
                     </div>
                     <div class="image-wrapper">
                         <a href="https://github.com/MeetMr-Diaz/Energy_Bill_Database_search.git" target="_blank">
-                          <img src="Energy.png" alt="">
+                          <img src="pics/Energy.png" alt="">
                         </a>
                       </div>
                 </div>
@@ -177,20 +177,14 @@
 
         <div id="Contact" data-tab-content>
             <h1>Contact</h1>
-            <form id="contactForm" action="Contact.php" method="post">
-                <div class="login">
-                  <input type="text" class="input" name="name" placeholder="Your Name"><br>
-                  <input type="text" class="input" name="email" placeholder="Your Email Address">
-                </div>
-                <div class="subject">
-                  <input type="text" class="input" name="subject" placeholder="Subject">
-                </div>
-                <div class="msg">
-                  <textarea class="area" name="message" placeholder="Leave a Message"></textarea>
-                </div>
-                <button type="submit" class="btn">Send Message</button>
-              </form>
-            
+            <div class="container">
+                <form action="https://formsubmit.co/6a3a5ca56778cf145e10036619d1d90c" method="POST">
+                    <input type="text" name="name" placeholder="Name" required>
+                    <input type="email" name="email" placeholder="Email" required>
+                    <textarea name="message" placeholder="Message" required></textarea>
+                    <button type="submit">Send</button>
+               </form>
+            </div>
         </div>
     </div>
 
