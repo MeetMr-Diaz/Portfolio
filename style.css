@@ -19,7 +19,6 @@
   
   .tabs {
     display: flex;
-    
     justify-content: space-around;
     list-style: none;
     margin: 0;
@@ -28,13 +27,11 @@
     color: white;
     font-size: 30px;
     font-weight: bold;
-    
   }
   
   .tab {
     cursor: pointer;
     padding: 10px;
-    
   }
   
   .tab:hover {
@@ -53,9 +50,9 @@
     padding-left: 20px;
     padding-right: 60px;
     flex:1;
-    
   }
   
+  /*for the home page*/
   .Home {
     display: flex;
     justify-content: center;
@@ -92,11 +89,10 @@
   color: #333333;
   box-shadow: 0 0 10px white;
 }
-  
+  /*for the CV page*/
 #CV p {
   font-size: 25px;
   text-align:center;
-
 }
 
 #CV button {
@@ -117,7 +113,7 @@
   box-shadow: 0 0 10px blue;
 }
 
-
+/*for the education page*/
 #Education {
   text-align: centers;
 }
@@ -135,7 +131,7 @@
   list-style: none;
 }
 
-
+/*for the projects page*/
  #mainBox {
   display: flex;
   flex-direction: rows;
@@ -175,12 +171,9 @@
 }
 
 #box:hover {
- 
-  
   box-shadow: 0 0 20px rgb(13, 21, 243);
   background:linear-gradient(to top, rgb(12, 12, 12) 50%, white 50%);
   -webkit-background-clip: text;
-
 }
 
 .image-wrapper{
@@ -191,7 +184,7 @@
   border-radius: 15px;
 }
 
-
+/*for the contact page*/
 
 #contact{
   max-width:800px;
@@ -203,15 +196,12 @@
   padding: 40px;
   box-sizing: border-box;
   box-shadow: 0 0 20px 0 rgba(72,98,85,0.6);
-  
-
 }
 #Contact h1 {
   font-size: 55px;
   text-align: left;
   margin: 5px;
   padding: 0px;
-  
 }
 
 .input, .msg .area {

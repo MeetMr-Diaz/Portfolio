@@ -174,34 +174,23 @@
             
         </p>
         </div>
+
         <div id="Contact" data-tab-content>
             <h1>Contact</h1>
-            <div id="contact">
+            <form id="contactForm" action="Contact.php" method="post">
                 <div class="login">
-                    <input type="text" class="input" placeholder="Your Name"><br>
-                    <input type="text" class="input" placeholder="Your Email Address">
-    
+                  <input type="text" class="input" name="name" placeholder="Your Name"><br>
+                  <input type="text" class="input" name="email" placeholder="Your Email Address">
                 </div>
                 <div class="subject">
-                    <input type="text" class="input" placeholder="Subject">
+                  <input type="text" class="input" name="subject" placeholder="Subject">
                 </div>
-    
                 <div class="msg">
-                    <textarea class="area" placeholder="Leave a Message" ></textarea>
+                  <textarea class="area" name="message" placeholder="Leave a Message"></textarea>
                 </div>
-                <div class="btn">Send Message</div>
-
-            </div>
+                <button type="submit" class="btn">Send Message</button>
+              </form>
             
-
-
-            <!-- <form id="contact-form" method="post" accept="">
-                <input name="name" type="text" class="form-control" placeholder="Your name" required><br>                    
-                <input name="email" type="email" class="form-control" placeholder="Your email" required><br>
-                <textarea name="message" class="form-control" placeholder="Message" rows="4" required>
-                </textarea><br>
-                <input type="submit" class="form-control submit" value="Send message">
-            </form>    -->
         </div>
     </div>
 
