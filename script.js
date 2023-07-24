@@ -16,4 +16,3 @@ tabs.forEach(tab => {
     })
 })
 
- 
