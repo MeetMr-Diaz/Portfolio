@@ -188,7 +188,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 30vh;
+  height: 38vh;
   margin: 0;
 }
 
@@ -222,7 +222,7 @@ button {
 
 #Contact {
   text-align: center;
-  margin: 0;
+  margin: 50px;
 }
 #Contact h1{
 
