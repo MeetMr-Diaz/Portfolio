@@ -1,92 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="script.js" defer></script>
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    <link rel="stylesheet" href="style.css">
-    <title>Portfolio</title>
-
-</head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="script.js" defer></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<link rel="stylesheet" href="style.css">
 
 <body>
-    <ul class="tabs">
-        <a href="index.html">Home</a>
-        <a href="cv.html">CV</a>
-        <a href="education.html">Education</a>
-        <a href="projects.html">Projects</a>
-        <a href="contact.html">Contact</a>
-    </ul>
-    <div class="tab-content">
+    <special-header></special-header>
 
-        <div id="CV" >
-            <h1>CV</h1>
-            <div>
-                <button id="Download">
-                    pdf <a href="CS_resume.pdf" target="_blank">Resume</a>
-                </button>
-            </div>
-            <p>
+    <div id="CV">
+        <h1>CV</h1>
+
+        <p>
+        <div class="info-container">
+            <div class="info">
                 Max Diaz<br>
-                Kansas City, Missouri 64126<br>
-                Email: <a href="mailto:meetmr.diaz@gmail.com">Meetmr.diaz@gmail.com</a><br><br>
-
-                <strong>SUMMARY</strong><br>
-                Computer Science student with knowledge in C++ and Java, as well as basic SQL. Experienced lead
-                Technician with a demonstrated history of working in the paper products industry. Skill in operation
-                management, Process engineering, Engineering maintenance management. Strong engineering professional in
-                manufacturing engineering process.<br><br>
-
-                <strong>EXPERIENCE</strong><br>
-                Georgia-Pacific Corporation, Kansas City, MO<br>
-                Lead Technician, 09/2010-01/2022<br>
-                - Maintain quality control over corrugated packaging<br>
-                - Create and improve value to processes<br>
-                - Perform quality check; ink viscosity, ink Ph., color swatch and board caliper<br>
-                - Report deviation or incorrect process to quality management<br><br>
-
-                Wel-Cote Manufacturing, Kansas City, MO<br>
-                Operator, 09/2004-06/2010<br>
-                - Operator: ready mix, liquid or dry<br>
-                - Cross trained with all the other equipment<br>
-                - Follow formula card to achieve proper viscosity<br><br>
-
-                Volunteering/Part-time staff at Grace United Community Church, Kansas City, MO<br>
-                Part-time staff, 2000–2004<br>
-                - After school tutor<br><br>
-
-                <strong>SKILLS</strong><br>
-                - Proficient on Microsoft Office<br>
-                - KIWI automation floor plan<br>
-                - Fluent in English and Spanish<br>
-                - C++, Java, SQL<br><br>
-
-                <strong>EDUCATION</strong><br>
-                Metropolitan Community College, Kansas City, MO<br>
-                - AAS in Engineering. Emphasis Civil/Mechanical Engineering<br>
-                - AAS in Engineering. Emphasis Computer Science<br><br>
-
-                University of Missouri-Kansas City, Kansas City, MO<br>
-                - B.S. Computer Science Student. Spring 2022 – Fall 2023 Pending<br>
-
-
-            </p>
+                <ion-icon name="location-outline"></ion-icon>Kansas City, Missouri 64126<br>
+                <ion-icon name="mail-outline"></ion-icon> <a href="mailto:meetmr.diaz@gmail.com">Meetmr.diaz@gmail.com</a><br>
+                <ion-icon name="eye-outline">Resume</ion-icon><button id="Download"><a href="CS_resume.pdf" target="_blank">Resume</a><br></button><br><br>
+            </div>
         </div>
 
+        <strong>SUMMARY</strong><br>
+        Computer Science student with knowledge in C++ and Java, as well as basic SQL. Experienced lead
+        Technician with a demonstrated history of working in the paper products industry. Skill in operation
+        management, Process engineering, Engineering maintenance management. Strong engineering professional in
+        manufacturing engineering process.<br><br>
+
+        <strong>EXPERIENCE</strong><br>
+        Georgia-Pacific Corporation, Kansas City, MO<br>
+        Lead Technician, 09/2010-01/2022<br>
+        - Maintain quality control over corrugated packaging<br>
+        - Create and improve value to processes<br>
+        - Perform quality check; ink viscosity, ink Ph., color swatch and board caliper<br>
+        - Report deviation or incorrect process to quality management<br><br>
+
+        Wel-Cote Manufacturing, Kansas City, MO<br>
+        Operator, 09/2004-06/2010<br>
+        - Operator: ready mix, liquid or dry<br>
+        - Cross trained with all the other equipment<br>
+        - Follow formula card to achieve proper viscosity<br><br>
+
+        Volunteering/Part-time staff at Grace United Community Church, Kansas City, MO<br>
+        Part-time staff, 2000–2004<br>
+        - After school tutor<br><br>
+
+        <strong>SKILLS</strong><br>
+        - Proficient on Microsoft Office<br>
+        - KIWI automation floor plan<br>
+        - Fluent in English and Spanish<br>
+        - C++, Java, SQL<br><br>
+
+        <strong>EDUCATION</strong><br>
+        Metropolitan Community College, Kansas City, MO<br>
+        - AAS in Engineering. Emphasis Civil/Mechanical Engineering<br>
+        - AAS in Engineering. Emphasis Computer Science<br><br>
+
+        University of Missouri-Kansas City, Kansas City, MO<br>
+        - B.S. Computer Science Student. Spring 2022 – Fall 2023 Pending<br>
+
+
+        </p>
     </div>
 
-    <footer><header>Max Diaz</header> <br>
-        <a href="mailto:meetmr.diaz@gmail.com">MeetMrDiaz@gmail.com</a><br><br>
-        <a href="https://github.com/MeetMr-Diaz" target="_blank" class="social-icon">
-          <ion-icon name="logo-github"></ion-icon>
-        </a>
-        <a href="https://www.linkedin.com/in/max-diaz-5190a338/" target="_blank" class="social-icon">
-          <ion-icon name="logo-linkedin"></ion-icon>
-        </a><br>
-    </footer>
+
+
+    <special-footer></special-footer>
+    <script src="headerFooterManager.js"></script>
 </body>
 
 </html>

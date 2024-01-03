@@ -2,14 +2,19 @@
   body {
     margin: 0;
     padding: 0;
-    background-color: #f5f5f5; 
     position: relative;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    font-size: 25px;
+    padding-top: 60px;
   }
   
-  .tabs {
+  .nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
     display: flex;
     justify-content: space-around;
     list-style: none;
@@ -17,25 +22,27 @@
     padding: 20px;;
     background-color: rgb(11, 15, 3);
     color: white;
-    font-size: 30px;
+    font-size: 25px;
     font-weight: bold;
+    z-index: 1000;
   }
   
-  .tabs a{
+  
+  .nav a{
     cursor: pointer;
     padding: 10px;
     text-decoration: none;
     color: white;
   }
   
-  .tabs a:hover {
+  .nav a:hover {
     background-color: #f5efef;
     color: #333333;
     box-shadow: 0 0 10px white;
     transition: all 0.2s ease-in-out;
   }
   
-  .tabs a.active {
+  .nav a.active {
     margin: 20px;
     background-color: antiquewhite;
     border: solid 1px #333333;
@@ -58,7 +65,6 @@
     
   }
   #Home p {
-    font-size: 25px;
     text-align: justify;
     margin-right: 20px;
     margin-left: 20px;
@@ -85,49 +91,54 @@
   box-shadow: 0 0 10px white;
 }
   /*for the CV page*/
-/* Add these styles for the CV page */
 #CV {
-  margin: 20px; /* Adjust margin as needed */
-  background-color: antiquewhite; /* Match the background color */
-  border: solid 1px #333333; /* Add border for consistency */
-  box-sizing: border-box;
-  padding: 20px 11px;
+  margin: 20px; 
+  /* box-sizing: border-box; */
+  padding: 20px 200px;
   text-align: center;
 }
 
 #CV h1 {
-  font-size: 36px; /* Adjust font size as needed */
-  margin-bottom: 10px; /* Adjust margin as needed */
+  font-size: 30px; 
+  margin-bottom: 10px; 
+  margin-top: 0;
+  text-align: left;
 }
 
 #CV p {
-  font-size: 25px; /* Adjust font size as needed */
-  line-height: 1; /* Adjust line height as needed */
-  padding: 0 100px; /* Adjust padding as needed */
+  font-size: 100px; 
+  line-height: 1; 
+  padding: 0 100px; 
 }
-#CV h1{
-  text-align: left;
-}
- /* Retain the existing styles for the CV page */
+
+ 
 #CV button {
-  font-size: 16px; /* Adjust font size as needed */
-  margin-top: 15px; /* Adjust margin as needed */
+  font-size: 16px; 
+  margin-top: 15px; 
   cursor: pointer;
-  border: none;
   color: white;
-  background-color: #d9d7d7; /* Add the background color property */
+  background-color: #ffffff; 
 }
 
 #CV button:hover {
   background-color: #f5efef;
   color: #070707;
-  box-shadow: 0 0 10px rgb(36, 5, 216);
 }
 
+.info-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Align items to the start (top) */
+  margin-bottom: 20px; /* Adjust the margin as needed */
+  height: auto; /* Adjust height as needed */
+}
 
-/* You can keep the existing styles for other sections like skills, education, etc. */
-
-/* Remove the existing styles for the education page (there's a typo in 'text-align') */
+.info {
+  text-align: left;
+  max-width: 300px;
+  width: 100%;
+  box-sizing: border-box;
+}
 #Education {
   text-align: center; /* Correct typo */
 }
@@ -251,7 +262,9 @@ footer {
   background-color: rgb(7, 10, 6);
   color: white;
   margin-top: auto;
-  height: 135px;
+  width: 100%; /* Set width to 100% to stretch across the page */
+  position: fixed;
+  bottom: 0;
 }
 
 footer p {
@@ -260,7 +273,7 @@ footer p {
 }
 
 footer header {
-  font-size: 20px; 
+  font-size: 20px;
 }
 
 footer a {
@@ -277,17 +290,4 @@ footer a:hover {
 footer .social-icon {
   font-size: 25px;
   margin: 0 10px;
-  color: white;
-  transition: color 0.2s;
-}
-
-footer .social-icon:hover {
-  background-color: #f5efef;
-  color: #333333;
-  box-shadow: 0 0 10px white;
-}
-
-footer p {
-  margin: 1px 0;
-  font-size: 14px;
 }

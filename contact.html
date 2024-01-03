@@ -1,23 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src ="script.js" defer></script>
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    <link rel="stylesheet" href="style.css">
-    <title>Portfolio</title>
-
-</head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="script.js" defer></script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <link rel="stylesheet" href="style.css">
 <body>
-    <ul class="tabs">
-        <a href="index.html">Home</a>
-        <a href="cv.html">CV</a>
-        <a href="education.html">Education</a>
-        <a href="projects.html">Projects</a>
-        <a href="contact.html">Contact</a>
-    </ul>
+  <special-header></special-header>
     <div class="tab-content">
 
         <div id="Contact">
@@ -34,14 +24,7 @@
         </div>
     </div>
 
-    <footer><header>Max Diaz</header> <br>
-        <a href="mailto:meetmr.diaz@gmail.com">MeetMrDiaz@gmail.com</a><br><br>
-        <a href="https://github.com/MeetMr-Diaz" target="_blank" class="social-icon">
-          <ion-icon name="logo-github"></ion-icon>
-        </a>
-        <a href="https://www.linkedin.com/in/max-diaz-5190a338/" target="_blank" class="social-icon">
-          <ion-icon name="logo-linkedin"></ion-icon>
-        </a><br>
-    </footer>
+    <special-footer></special-footer>
+    <script src="headerFooterManager.js"></script>
 </body>
 </html>
