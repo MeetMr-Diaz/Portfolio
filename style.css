@@ -8,6 +8,7 @@
     min-height: 100vh;
     font-size: 25px;
     padding-top: 60px;
+    padding-bottom: 80px;
   }
   
   .nav {
@@ -93,22 +94,21 @@
   /*for the CV page*/
 #CV {
   margin: 20px; 
-  /* box-sizing: border-box; */
   padding: 20px 200px;
-  text-align: center;
+  text-align: left;
 }
 
 #CV h1 {
-  font-size: 30px; 
-  margin-bottom: 10px; 
+  font-size: 40px; 
+  margin-bottom: 100px; 
   margin-top: 0;
   text-align: left;
 }
 
 #CV p {
-  font-size: 100px; 
-  line-height: 1; 
-  padding: 0 100px; 
+  font-size: 18px; 
+  line-height: 1.5; 
+  padding: 0 20px; 
 }
 
  
@@ -127,8 +127,8 @@
 
 .info-container {
   display: flex;
-  justify-content: center;
-  align-items: flex-start; /* Align items to the start (top) */
+  justify-content: left;
+  align-items:left; /* Align items to the start (top) */
   margin-bottom: 20px; /* Adjust the margin as needed */
   height: auto; /* Adjust height as needed */
 }
@@ -138,9 +138,11 @@
   max-width: 300px;
   width: 100%;
   box-sizing: border-box;
+  white-space: nowrap;
 }
 #Education {
-  text-align: center; /* Correct typo */
+  text-align: center; 
+  margin-bottom: 60px;
 }
 
 #Education #educationHistory {
