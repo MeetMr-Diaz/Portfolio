@@ -2,21 +2,18 @@
 <html lang="en">
 
 <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="script.js" defer></script>
-  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-  <link rel="stylesheet" href="style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="script.js" defer></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+<link rel="stylesheet" href="style.css">
 
 <body>
     <special-header></special-header>
-    <div class="tab-content">
+    
         <div id="Projects">
             <h1>Projects</h1>
-            <p>I have experience in developing small-scale applications using both C++ and Java, ranging from simple
-                calculators to GUI-based applications. However, my most significant projects have involved extensive
-                utilization of Object-Oriented Programming principles. For further details and access to the
-                corresponding GitHub repositories, kindly click on each picture.</p>
+            <p class="introduction">I have experience in developing small-scale applications using both C++ and Java, ranging from simple calculators to GUI-based applications. However, my most significant projects have involved extensive utilization of Object-Oriented Programming principles. Most recently a full-stack develoment using Node.js and MongoDB.</p>
 
             <div id="mainBox">
                 <div id="box">
@@ -31,10 +28,11 @@
                     </div>
                     <div class="image-wrapper">
                         <a href="https://github.com/MeetMr-Diaz/SOS_Game_Sprint_5.git" target="_blank">
-                            <img src="pics/SOS.png" alt="">
+                            <img src="pics/SOS.png" alt="sos">
                         </a>
                     </div>
                 </div>
+
                 <div id="box">
                     <div class="content">
                         <h1 class="heading">VR Game</h1>
@@ -48,7 +46,7 @@
                     </div>
                     <div class="image-wrapper">
                         <a href="https://github.com/MeetMr-Diaz/VR-Dart-Shooting.git" target="_blank">
-                            <img src="pics/VR.png" alt="">
+                            <img src="pics/VR.png" alt="vr">
                         </a>
                     </div>
                 </div>
@@ -68,9 +66,14 @@
                     </div>
                     <div class="image-wrapper">
                         <a href="https://github.com/MeetMr-Diaz/Energy_Bill_Database_search.git" target="_blank">
-                            <img src="pics/Energy.png" alt="">
+                            <img src="pics/Energy.png" alt="databaseApp">
                         </a>
                     </div>
+                </div>
+
+                <div id="box">
+                    <h1 class="heading">Application Submission Portal</h1>
+                    <p>The purpose of the GTA Application Submission System is to streamline and modernize the process of collecting, managing, and matching Graduate Teaching Assistant (GTA) applications within the UMKC Computer Science department. There are two types of users: students and administrators. Users can view jobs and sort them by types. To apply for a specific job, a user needs to be logged in and can also check the application status on a dedicated tab or page. When logged in as an admin, one can view a list of job postings and have the ability to create, edit, delete, and change the status of a job. Both user and admin data are stored in a database. Admin users can change the status of a job applicant and access all their information. This full-stack development project uses Node.js, Express.js, MongoDB, and employs the EJS extension with layouts.</p>
                 </div>
 
             </div>
@@ -79,7 +82,7 @@
         </div>
 
 
-    </div>
+    
 
     <special-footer></special-footer>
     <script src="headerFooterManager.js"></script>

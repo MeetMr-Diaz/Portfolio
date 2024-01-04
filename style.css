@@ -61,23 +61,29 @@
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    height: auto;
-    padding: auto;
+    height: 100vh;
+    padding: 0px;
     
   }
+
+
   #Home p {
     text-align: justify;
+    font-size: 20px;
     margin-right: 20px;
     margin-left: 20px;
+    padding: 0 80px 0 200px;
+
   } 
   
   #Home img {
     width: 200px;
-    height: 250px;
+    height: auto;
     border-radius: 100%;
     float: left;
     margin-right: 55px;
-    margin-left: 22px;
+    margin-left: 55px;
+    padding-top: 20px;
   }
   
 .social-icon {
@@ -106,7 +112,7 @@
 }
 
 #CV p {
-  font-size: 18px; 
+  font-size: 20px;
   line-height: 1.5; 
   padding: 0 20px; 
 }
@@ -128,9 +134,9 @@
 .info-container {
   display: flex;
   justify-content: left;
-  align-items:left; /* Align items to the start (top) */
-  margin-bottom: 20px; /* Adjust the margin as needed */
-  height: auto; /* Adjust height as needed */
+  align-items:left; 
+  margin-bottom: 20px; 
+  height: auto; 
 }
 
 .info {
@@ -144,12 +150,18 @@
   text-align: center; 
   margin-bottom: 60px;
 }
+#Education h1 {
+  font-size: 40px; 
+  margin-bottom: 0; 
+  margin-top: 50px;
+  text-align: left;
+}
 
 #Education #educationHistory {
   font-size: 25px;
   text-align: center;
   margin: 5px;
-  padding: 0px;
+  padding: 15px 50px 20px 50px;
 }
 
 #Education #educationDetails {
@@ -160,10 +172,18 @@
 
 
 /*for the projects page*/
+.introduction {
+  padding: 0 50px 0 50px;
+}
  #mainBox {
   display: flex;
   flex-direction: rows;
   padding: 20px;
+}
+
+#mainBox h1 {
+  font-size: 25px;
+  margin-bottom: 0;
 }
 
 #box{
@@ -213,6 +233,7 @@
   border-radius: 15px;
 }
 
+/**For contact information**/
 .container {
   display: flex;
   justify-content: center;
