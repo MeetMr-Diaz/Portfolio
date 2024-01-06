@@ -287,7 +287,7 @@ footer {
   background-color: rgb(7, 10, 6);
   color: white;
   margin-top: auto;
-  width: 100%; /* Set width to 100% to stretch across the page */
+  width: 100%; 
   position: fixed;
   bottom: 0;
 }
@@ -328,8 +328,8 @@ footer .social-icon {
   }
 
   .nav a {
-    padding: 5px 5px 0 0px; /* Adjust padding for smaller screens */
-    font-size: 15px; /* Adjust font size for smaller screens */
+    padding: 5px 5px 0 0px; 
+    font-size: 15px; 
   }
 
   #Home img {
@@ -340,8 +340,8 @@ footer .social-icon {
   }
 
   #Home p {
-    padding: 0 10px; /* Adjust padding for smaller screens */
-    font-size: 18px; /* Adjust font size for smaller screens */
+    padding: 0 10px; 
+    font-size: 18px; 
   }
 #CV {
   padding: 0px;
@@ -352,7 +352,7 @@ footer .social-icon {
   text-align: left;
 }
 #CV p {
-  padding: 0 10px; /* Adjust padding for smaller screens */
+  padding: 0 10px;
 
 }
 strong {
@@ -374,9 +374,6 @@ strong {
 #educationDetails li {
   padding-left: 20px;
 }
-
-
-
 
 #Projects {
   padding: 10px;
@@ -403,19 +400,6 @@ strong {
   height: 300px; 
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 #Contact {
   padding: 10px;
 }
@@ -437,14 +421,14 @@ input,
 textarea {
   width: 100%;
   box-sizing: border-box;
-  padding: 8px; /* Adjust padding for a more compact look */
-  margin-bottom: 10px; /* Add some space between input fields */
-  font-size: 14px; /* Adjust font size for better readability */
+  padding: 8px; 
+  margin-bottom: 10px; 
+  font-size: 14px;
 }
 
 button {
   padding: 10px 20px;
-  font-size: 16px; /* Adjust font size for better readability */
+  font-size: 16px; 
 }
 
 
