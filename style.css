@@ -189,13 +189,14 @@
 #box{
   flex-grow: 1;
   position: relative;
-  width: 350px;
-  height: 880px;
+  width: 90%;
+  height: auto;
+  margin-bottom: 20px;
   border: 1px solid black;
   margin: 10px;
   border-radius: 15px;
   overflow: hidden;
-   display: flex;
+  display: flex;
   flex-direction: column;
   align-items: center;
   text-align: justify;
@@ -215,6 +216,7 @@
 #box img{
   width: 100%;
   height: 100%;
+  object-fit: cover;
   background-color: white;
 }
 
@@ -313,4 +315,137 @@ footer a:hover {
 footer .social-icon {
   font-size: 25px;
   margin: 0 10px;
+}
+
+/* Mobile styles */
+@media only screen and (max-width: 600px) {
+  body {
+    font-size: 16px;
+  }
+
+  .nav {
+    padding: 10px;
+  }
+
+  .nav a {
+    padding: 5px 5px 0 0px; /* Adjust padding for smaller screens */
+    font-size: 15px; /* Adjust font size for smaller screens */
+  }
+
+  #Home img {
+    width: 30%;
+    margin-right: 0;
+    margin-left: 0;
+    padding-top: 10px;
+  }
+
+  #Home p {
+    padding: 0 10px; /* Adjust padding for smaller screens */
+    font-size: 18px; /* Adjust font size for smaller screens */
+  }
+#CV {
+  padding: 0px;
+
+}
+.info {
+  max-width: 100%;
+  text-align: left;
+}
+#CV p {
+  padding: 0 10px; /* Adjust padding for smaller screens */
+
+}
+strong {
+  display: block;
+  margin-top: 10px;
+};
+#DownLoad {
+  margin-top: 10px;
+}
+#Education {
+  padding: 0px;
+}
+#educationHistory p {
+  padding: 0 10px;
+}
+#educationDetails h4 {
+  margin-top: 10px;
+}
+#educationDetails li {
+  padding-left: 20px;
+}
+
+
+
+
+#Projects {
+  padding: 10px;
+}
+
+.introduction,
+.heading,
+.content {
+  padding: 0 10px;
+}
+
+#mainBox {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  grid-gap: 15px;
+  padding-left: 1px; 
+}
+
+#box {
+  width: 90%; 
+}
+
+.image-wrapper {
+  height: 300px; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#Contact {
+  padding: 10px;
+}
+
+.intro {
+  padding: 0 10px;
+}
+
+.container {
+  max-width: 240px;
+  margin: 0 auto;
+}
+
+form {
+  width: 100%;
+}
+
+input,
+textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 8px; /* Adjust padding for a more compact look */
+  margin-bottom: 10px; /* Add some space between input fields */
+  font-size: 14px; /* Adjust font size for better readability */
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px; /* Adjust font size for better readability */
+}
+
+
 }
